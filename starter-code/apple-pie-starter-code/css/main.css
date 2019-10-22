@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+body{
+    font-family: 'Nuito Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+header{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#pie-image{
+    object-fit: cover;
+    object-position: 0 25%;
+    width: 100%;
+    height: 500px;
+}
+
+h1{
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 80px;
+    color: #FFFFFF;
+    position: absolute;
+}
+
+.weigh{
+    font-weight: 100;
+}
+
+h2{
+    font-weight: 300;
+}
+
+.sect{
+    width: 80%;
+    position: abosolute;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.sect p{
+    text-align:center;
+    display: inline-block;
+    position: relative;
+    font-size: 1.3em;
+    line-height: 2rem;
+}
+
+.image{
+    width: auto;
+    height: 65px;
+}
+
+.sect div{
+    text-align:center;
+    position: relative;
+}
+
+hr{
+    width:80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+ul.dashed{
+    list-style-type: none;  
+}
+
+ul.dashed > li::before {
+    content: "- ";
+}
+
+ol {
+    counter-reset: list;
+}
+ol > li {
+    list-style: none;
+}
+ol > li:before {
+    counter-increment: list;
+    content: counter(list, decimal) ") ";
+    list-style-position: inside;
+    padding:0;
+    left: -1.4em;
+}
